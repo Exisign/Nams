@@ -1,4 +1,4 @@
-
+package Game;
 public class Card {
 	
 	int kind;
@@ -15,7 +15,7 @@ public class Card {
 	
 	public String toString(){
 		
-		String kind = "0A2345678910JQK";
+		String kind = "0A23456789XJQK";
 		String num = "0SCDH";	//스페이스, 클로버, 다이아, 하트
 		
 		return "["  + kind.charAt(this.kind) + "," + kind.charAt(this.num) + "]";

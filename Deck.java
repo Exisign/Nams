@@ -1,4 +1,4 @@
-
+package Game;
 public class Deck{
 
 	int total_cnt;
