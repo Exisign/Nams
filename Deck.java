@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package Game;
+=======
+
+>>>>>>> 9afb3f686505ec2740d7d330be81eea5d0bd15d3
 public class Deck{
 
 	int total_cnt;
