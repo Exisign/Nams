@@ -13,7 +13,7 @@ public class BlackTest {
 			Card c = d.popCard();
 			
 			try{
-			assertTrue(0<=c.showNum()&&c.showNum()<=51);
+			assertTrue(0<=c.getNum()&&c.getNum()<=51);
 			}catch(Exception e){
 			}
 		}
@@ -29,7 +29,7 @@ public class BlackTest {
 			
 			
 			try{
-				assertTrue(0<=c.showKind()&&c.showKind()<=3);
+				assertTrue(0<=c.getKind()&&c.getKind()<=3);
 				}catch(Exception e){
 				}
 

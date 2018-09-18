@@ -28,8 +28,8 @@ public class BlackJackDeck implements Deck{
 	public void makeDeck() {
 		try{
 			for(int i = 0; i<total_card; i++){
-				deck[i].inputKind(i);
-				deck[i].inputNum(i);
+				deck[i].setKind(i);
+				deck[i].setNum(i);
 				System.out.println("덱 생성 완료");
 			}
 		}catch(Exception e){

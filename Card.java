@@ -2,12 +2,12 @@
 public class Card {
 	
 	//kind
-	//	0	:	스페이스	/	1	:	클로버
-	//	2	:	하트		/	3	:	다이아몬드
+	//	1	:	스페이스	/	2	:	클로버
+	//	3	:	하트		/	4	:	다이아몬드
 	
 	//num
-	//0~9 : A~10까지의 카드
-	//10, 11, 12 : J Q K
+	//1~10 : A~10까지의 카드
+	//11, 12, 13 : J Q K
 	private int kind;
 	private int num;
 	
@@ -19,23 +19,23 @@ public class Card {
 	//하나의 문양은 13개의 카드로 이뤄져 있다.
 	//13개의 카드는 4종류의 문양으로 이뤄져있다.
 	Card(int total_card){
-		kind = total_card/13;
-		num = total_card%13;
+		kind = (total_card/13)+1;
+		num = (total_card%13)+1;
 	}
 	
-	protected int showKind(){
+	protected int getKind(){
 		return kind;
 	}
 	
-	protected int showNum(){
+	protected int getNum(){
 		return num;
 	}
 	
-	protected void inputKind(int kind){
+	protected void setKind(int kind){
 		this.kind = kind;
 	}
 	
-	protected void inputNum(int num){
+	protected void setNum(int num){
 		this.num = num;
 	}
 }
